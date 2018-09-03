@@ -9,7 +9,7 @@
     top: 0;
     [class*='icon-'] {
         display: inline-block;
-        margin-top: 3px;
+        margin-top: $grid-base * 0.1875;
     }
     @media (max-width:767px) {
         flex-direction: column;
@@ -18,15 +18,15 @@
 }
 
 .topbar-left {
-    width: 188px;
-    height: 61px;
+    width: $grid-base * 19;
+    height: $grid-base * 6;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
     background-color: #000;
     .logo {
-        padding-left: 20px;
+        padding-left: $grid-base * 2;
         img {
             height: auto;
             width: 100%;
@@ -35,8 +35,8 @@
     .hamburger {
         a {
             color: #999;
-            font-size: 22px;
-            padding-right: 18px;
+            font-size: $grid-base * 1.375;
+            padding-right: $grid-base * 1.125;
         }
     }
     @media (max-width:767px) {
@@ -54,22 +54,22 @@
     border-bottom: {
         color: #e3e3e3;
         style: solid;
-        width: 1px;
+        width: $grid-base * 0.0625;
     }
     @media (max-width:767px) {
-        border-width: 0px;
+        border-width: 0;
     }
     p {
-        font-size: 20px;
+        font-size: $grid-base * 2;
         font-weight: 400;
         color: #9c9c9c;
         margin: 0;
     }
     a {
-        font-size: 20px;
+        font-size: $grid-base * 1.25;
         color: #9c9c9c;
-        padding-left: 18px;
-        padding-right: 18px;
+        padding-left: $grid-base * 1.125;
+        padding-right: $grid-base * 1.125;
         &:hover {
             color: #333333;
         }
@@ -81,15 +81,15 @@
         border-left: {
             color: #e3e3e3;
             style: solid;
-            width: 1px;
+            width: $grid-base * 0.0625;
         }
         @media (max-width:767px) {
             width: 100%;
-            border-left: 0px;
+            border-left: 0;
             border-bottom: {
                 color: #e3e3e3;
                 style: solid;
-                width: 1px;
+                width: $grid-base * 0.0625;
             }
         }
     }
@@ -123,9 +123,9 @@
     .profile {
         justify-content: space-around;
         i {
-            font-size: 20px;
+            font-size: $grid-base * 1.25;
             color: #9c9c9c;
-            padding-left: 18px;
+            padding-left: $grid-base * 1.125;
         }
         a {
             @extend .link-l;
