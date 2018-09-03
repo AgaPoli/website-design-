@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     //z-index: 1;
-    background-color: #000;
+    background-color: $paragraph-color;
     .logo {
         padding-left: $grid-base * 2;
         img {
@@ -34,7 +34,7 @@
     }
     .hamburger {
         a {
-            color: #999;
+            color: $brand-color-grey;
             font-size: $font-size-2;
             padding-right: $grid-base * 1.125;
         }
@@ -50,7 +50,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #fff;
+    background-color: $white;
     border-bottom: { //linia oddzielajaca
         color: $brand-color-disabled;
         style: solid;
@@ -71,7 +71,7 @@
         padding-left: $grid-base * 1.125;
         padding-right: $grid-base * 1.125;
         &:hover {
-            color: #333333;
+            color: $gray-text;
         }
     }
     div {
@@ -148,3 +148,13 @@
         display: none;
     }
 }
+
+/*[class*='icon-']:before{
+	display: inline-block;
+    font-family: 'Glyphter';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+ } opis w _glyphter.scss*/
