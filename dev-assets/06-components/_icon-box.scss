@@ -1,20 +1,20 @@
-.c-icon-box {
+.c-icon-box { //div kontener ma miec miejsce na obrazek np c-icon-box_image. 
     text-align: center;
 
-    &__image {
+    &__image { //ma srodkowac w pionie ikony
         display: flex;
-        justify-content: center;
+        justify-content: center;//obrazki beda w poziomie
         /** Najwyzsza ikona ma taka wysokosc **/
-        height: $grid-base * 6;
-        margin-bottom: $grid-base * 2.5;
+        height: $grid-base * 6;// wysokosc na sztywno , njawyzsza ikona ma taka wysokosc
+        margin-bottom: $grid-base * 2.5; //25
     }
 
-    &__icon {
-        align-self: center;
+    &__icon {//wew elementu image
+        align-self: center; //ikona wew diva imige bedzie wysrodkowana w pionie
     }
 
     &__text {
-        font-size: $font-size-6;
-        margin-top: $grid-base * 1.5;
+        font-size: $font-size-6; //12px
+        margin-top: $grid-base * 1.5; //15px
     }
 }

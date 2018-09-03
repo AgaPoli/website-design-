@@ -1,9 +1,9 @@
-.o-col {
-    width: 100%;
-    padding-left: $gutter;
-    padding-right: $gutter;
+.o-col { //male uzadzenia do wszystkich kolumn
+    width: 100%; // wartosc dla przegladarek starszych np IE11 i IE11
+    padding-left: $gutter; //15px
+    padding-right: $gutter; //15px
 
-    &--md25 {
+    &--md25 {//URZADZENIA MALE
         @include medium-up {
             flex: 0 0 25%;
             max-width: 25%;
@@ -17,14 +17,14 @@
         }
     }
 
-    &--md50 {
+    &--md50 { //dwie kolumny obok siebie
         @include medium-up {
             flex: 0 0 50%;
-            max-width: 50%;
+            max-width: 50%; // wartosc dla przegladarek starszych np IE11 i IE11
         }
     }
 
-    &--lg25 {
+    &--lg25 { //URZADZENIA DUZE 1200PX//OTRZYMAMY 25%STRONY
         @include large-up {
             flex: 0 0 25%;
             max-width: 25%;

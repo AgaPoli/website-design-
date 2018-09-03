@@ -1,9 +1,9 @@
 .c-heading {
-    color: $blue-text;
-    line-height: $line-height-sm;
-    margin-bottom: $grid-base / 2;
+    color: $gray-text;
+    line-height: $line-height-sm; //1.2 dla wszystkich
+    margin-bottom: $grid-base / 2;//baza 5 to 2.5
 
-    &--level1 {
+    &--level1 { //najwiekszy tekst *GENERAL STATISTIC??? DODTOSOWAC WIELKOSC, BEDZIE ZA DUZY
         font-size: $font-size-2;
         
         @include large-up {
@@ -35,7 +35,11 @@
         text-transform: uppercase;
     }
 
-    &--white {
+    &--white { //C-HEADING--WHITE gdy dodamy do klasy bedzie bialy naglowek
         color: $white;
+    }
+
+    &--pink { //C-HEADING--WHITE gdy dodamy do klasy bedzie bialy naglowek
+        color: purple;
     }
 }

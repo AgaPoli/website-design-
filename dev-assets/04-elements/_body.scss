@@ -1,8 +1,8 @@
 body {
     background-color: $white;
-    color: $gray-dark;
-    font-family: 'Montserrat', sans-serif;
-    font-size: $font-size-4;
-    margin: 0;
-    padding: 0;
+    color: $brand-color-grey;
+    font-family: $brand-font;
+    font-size: $font-size-4; //1REM
+    margin: 0; //ZRESETOWANE
 }
+//CZCIONKA MA BYC GLYPHTER

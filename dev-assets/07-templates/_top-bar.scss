@@ -1,0 +1,150 @@
+.section-topbar {
+    * {
+        box-sizing: border-box;
+    }
+    width: 100%;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    [class*='icon-'] {
+        display: inline-block;
+        margin-top: 3px;
+    }
+    @media (max-width:767px) {
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+.topbar-left {
+    width: 188px;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: #000;
+    .logo {
+        padding-left: 20px;
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .hamburger {
+        a {
+            color: #999;
+            font-size: 22px;
+            padding-right: 18px;
+        }
+    }
+    @media (max-width:767px) {
+        width: 100%;
+        position: fixed;
+    }
+}
+
+.topbar-right {
+    width: calc(100% - 188px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: {
+        color: #e3e3e3;
+        style: solid;
+        width: 1px;
+    }
+    @media (max-width:767px) {
+        border-width: 0px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        color: #9c9c9c;
+        margin: 0;
+    }
+    a {
+        font-size: 20px;
+        color: #9c9c9c;
+        padding-left: 18px;
+        padding-right: 18px;
+        &:hover {
+            color: #333333;
+        }
+    }
+    div {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        border-left: {
+            color: #e3e3e3;
+            style: solid;
+            width: 1px;
+        }
+        @media (max-width:767px) {
+            width: 100%;
+            border-left: 0px;
+            border-bottom: {
+                color: #e3e3e3;
+                style: solid;
+                width: 1px;
+            }
+        }
+    }
+    .wallet {
+        justify-content: space-around;
+        a:last-of-type {
+            font-size: 11px;
+        }
+        @media (max-width:767px) {
+            justify-content: center;
+        }
+    }
+    .notifications {
+        justify-content: center;
+        a {
+            position: relative;
+        }
+        .icon-notification {
+            &::after {
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $brand-color;
+                position: absolute;
+                left: 52%;
+                top: 18%;
+            }
+        }
+    }
+    .profile {
+        justify-content: space-around;
+        i {
+            font-size: 20px;
+            color: #9c9c9c;
+            padding-left: 18px;
+        }
+        a {
+            @extend .link-l;
+        }
+        @media (max-width:767px) {
+            justify-content: center;
+        }
+    }
+    .exit {
+        justify-content: center;
+    }
+    @media (max-width:767px) {
+        flex-direction: column;
+        width: 100%; // margin-top: 61px;
+    }
+}
+
+.visible-lg {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

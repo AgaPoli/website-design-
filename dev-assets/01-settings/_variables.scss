@@ -1,15 +1,16 @@
-// Kolory
+// Colors
+$paragraph-color: #000000;
+$brand-color: #f58220;
+$brand-color-hover: #ffa200;
+$brand-color-grey: #a6a6a6;
+$brand-color-grey-hover:#bababa;
+$brand-color-disabled: #e3e3e3;
 $white: #FFFFFF;
-$black: #000000;
-$gray-light: #F9FBFE;
-$gray-dark: #444444;
-$blue-dark: #3E5CC5;
-$blue-light: #D3EAFA;
-$blue-text: #3B99E1;
-$green: #60DC64;
+$gray-text: #333333;
+//#a6a6a6
 
-$blue-gradient: linear-gradient(45deg, #3E5CC5 0%, #5B8AF8 100%);
-
+/* Font sizes */
+$paragraph-font-size: 16px;
 // Tekst
 $font-size-base: 1rem;
 $font-size-1: $font-size-base * 3; // ~48px
@@ -20,17 +21,24 @@ $font-size-5: $font-size-base * .875; // ~14px
 $font-size-6: $font-size-base * .75; // ~12px
 $font-size-7: $font-size-base * .625; // ~10px
 
-$line-height-base: 1.5;
-$line-height-sm: 1.2;
-$line-height-lg: 1.8;
+/* Fonts */
+$brand-font: 'Roboto', sans-serif;
+$paragraph-font: 'Roboto', sans-serif;
 
-// Siatka
+
+//dlugosci linii
+$line-height-base: 1.5; //akapity
+$line-height-sm: 1.2; //naglowki
+$line-height-lg: 1.8; 
+
+// Siatka marginesy , paddingi...
 $grid-base: 10px;
-$gutter: $grid-base * 1.5;
+$gutter: $grid-base * 1.5; //odstepy pomiedzy pionowymi kolumnami
 
-// Zaokroglenia
-$border-radius: $grid-base * .5;
+// Zaokroglenia naroznikow
+$border-radius: $grid-base * .5; //gridbase tak by mozna bylo skalowac
 
-// Breakpoint
-$bp-medium: '800px';
-$bp-large: '1200px';
+// Breakpoint zwiazane z responsywnoscia strony
+$bp-medium: '800px'; //uzadzenia male
+$bp-large: '1200px'; //uzadzenia srednie, powyzej 1200 uzadzenia duze
+

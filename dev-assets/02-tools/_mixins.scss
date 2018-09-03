@@ -1,11 +1,11 @@
-// Od srednich w gore
+// Od srednich w gore 800px w settings
 @mixin medium-up {
     @media (min-width: #{$bp-medium}) {
         @content
     }
 }
 
-// Od duzych w gore
+// Od duzych w gore 1200px
 @mixin large-up {
     @media (min-width: #{$bp-large}) {
         @content

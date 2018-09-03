@@ -15,22 +15,22 @@
         text-decoration: none;
     }
 
-    &--primary {
-        background-color: $blue-light;
-        color: $blue-text;
+    &--primary {//glowny przycisk
+        background-color: $brand-color;
+        color: $gray-text;
 
         &:hover {
-            background-color: darken($blue-light, 15%);
+            background-color: darken($brand-color-hover, 15%);
             color: $white;
         }
     }
 
     &--accent {
-        background-color: $green;
+        background-color: $brand-color-grey;
         color: $white;
 
         &:hover {
-            background-color: darken($green, 15%);
+            background-color: darken($brand-color-grey-hover, 15%);
             color: $white;
         }
     }
@@ -47,11 +47,11 @@
 
     &--light {
         background-color: $white;
-        color: $blue-text;
+        color: $gray-text;
 
         &:hover {
             background-color: darken($white, 15%);
-            color: $blue-text;
+            color: $gray-text;
         }
     }
 
