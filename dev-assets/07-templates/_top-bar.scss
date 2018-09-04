@@ -128,7 +128,7 @@
             padding-left: $grid-base * 1.125;
         }
         a {
-            @extend .link-l;
+            //@extend .link-l;
         }
         @media (max-width:767px) {
             justify-content: center;

@@ -36,11 +36,11 @@
     }
 
     &--dark-blue {
-        background-color: $blue-dark;
+        background-color: pink;
         color: $white;
 
         &:hover {
-            background-color: darken($blue-dark, 15%);
+            background-color: $brand-color;
             color: $white;
         }
     }
