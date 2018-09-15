@@ -48,7 +48,7 @@
         
         @include large-up {
             font-size: $font-size-3;
-            line-height: 1.66;
+            line-height: $line-height-base;
             margin-bottom: $grid-base * 6;
         }
     }

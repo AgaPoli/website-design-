@@ -1,0 +1,75 @@
+.date-filter {
+    border-bottom: 1px solid #e3e3e3;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        margin-left: 16px;
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        button {
+            margin-top: 10px;
+            margin-left: 0;
+            .icon-refresh {
+                display: inline-block;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.date-range {
+    box-sizing: border-box;
+    width: 325px;
+    height: 40px;
+    line-height: 40px;
+    border: {
+        width: 1px;
+        style: solid;
+        color: #e3e3e3;
+    }
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+        border-width: 0px;
+        border-style: none;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        font-weight: 300;
+        outline-style: none;
+        overflow: hidden;
+    }
+    .date-spacer {
+        vertical-align: middle;
+        width: 1px;
+        height: 28px;
+        background-color: #e3e3e3;
+    }
+    a {
+        margin-right: 11px;
+        .icon-calendar {
+            width: 13px;
+            height: 13px;
+            color: #9b9b9b;
+            display: inline-block;
+            margin-top: 3px;
+        }
+    }
+    &:hover {
+        border-color: #b1b1b1;
+        .icon-calendar {
+            color: #333333;
+        }
+    }
+    @media (max-width: 767px) {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,46 +1,398 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<title>Solo project</title>
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="prod-assets/style.css" media="screen" rel="stylesheet" type="text/css">
-	<link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Solo project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
+
 <body>
-	<!-- top bar --><!-- logo i hamburger po lewej -->
-	<section class="section-topbar">
-		<div class="o-container">
-			<div class="topbar-left">
-				<div class="logo"><img alt="logo" src="images/logo.png"></div>
-				<div class="hamburger">
-					<a href="#">☰</a>
-				</div>
-			</div>
-			<div class="topbar-right visible-lg">
-				<!-- logo po prawej -->
-				<div class="wallet"> <!-- opis _glyphter -->
-					<a href="#"><i class="icon-wallet"></i></a>
-					<p>$1,500.00</p><a href="#"><i class="icon-arrow-down"></i></a>
-				</div>
-				<div class="notifications">
-					<a href="#"><i class="icon-notification"></i></a>
-				</div>
-				<div class="profile">
-					<i class="icon-profile"></i> <a class="link-l" href="#">Leonardo Dicaprio</a>
-				</div>
-				<div class="exit">
-					<a href="#"><i class="icon-quit"></i></a>
-				</div>
-			</div>
-		</div>
-	</section><!-- section general --><!-- poczatek okna z GENERAL I LINKS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js">
-	</script> 
-	<script src="https://cdn.jsdelivr.net/npm/flatpickr">
-	</script> 
-	<script src="js/script.js">
-	</script>
+    <!-- top bar --> <!-- logo i hamburger po lewej -->
+    <section class="section--topbar">
+        <div class="topbar-left">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="hamburger">
+                <a href="#">☰</a>
+            </div>
+        </div>
+        <div class="topbar-right visible-lg"> <!-- logo po prawej -->
+            <div class="wallet">
+                <a href="#">
+                    <i class="icon-wallet"></i>
+                </a>
+                <p>$1,500.00</p>
+                <a href="#">
+                    <i class="icon-arrow-down"></i>
+                </a>
+            </div>
+            <div class="notifications">
+                <a href="#">
+                    <i class="icon-notification"></i>
+                </a>
+            </div>
+            <div class="profile">
+                <i class="icon-profile"></i>
+                <a href="#" class="link-l">Leonardo Dicaprio</a>
+            </div>
+            <div class="exit">
+                <a href="#">
+                    <i class="icon-quit"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- sidebar -->
+    <section class="section--sidebar">
+
+        <div class="sidebar-menu"><!-- menu pod logo -->
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="icon-general"></i>General</a>
+                </li>
+                <li>
+                    <a href="_details.html">
+                        <i class="icon-details"></i>Details</a>
+                </li>
+                <li>
+                    <a href="_links.html">
+                        <i class="icon-links"></i>Links</a>
+                </li>
+                <li>
+                    <a href="_banners.html">
+                        <i class="icon-banners"></i>Banners</a>
+                </li>
+                <li>
+                    <a href="_personal_data.html">
+                        <i class="icon-personaldata"></i>Personal data</a>
+                </li>
+                <li>
+                    <a href="_payout.html">
+                        <i class="icon-payout"></i>Payout</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-postback"></i>Postback</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-manager"> <!-- zdjecie menagera po lewej -->
+            <h6>your manager</h6>
+            <div>
+                <a href="#" class="chat">
+                    <div class="manager-photo" style="background-image: url(images/photo.png)"></div>
+                    Mikhael E.</a>
+            </div>
+        </div>
+
+        <div class="visible-sm">
+            <div class="topbar-right">
+                <div class="wallet">
+                    <a href="#">
+                        <i class="icon-wallet"></i>
+                    </a>
+                    <p>$1,500.00</p>
+                    <a href="#">
+                        <i class="icon-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="profile">
+                    <i class="icon-profile"></i>
+                    <a href="#" class="link-l">Leonardo Dicaprio</a>
+                </div>
+                <div class="notifications-and-exit">
+                    <a href="#">
+                        <i class="icon-notification"></i>
+                    </a>
+                    <a href="#">
+                        <i class="icon-quit"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section general --> <!-- poczatek okna z GENERAL I LINKS -->
+    <section class="section--general">
+
+        <div class="page-statistic">
+            <h3 class="page-header">General statistic</h3>
+            <div class="date-filter"> <!-- MALA TABELKA Z DATAMI I POMARANCZOWYM ZNACZKEM -->
+                <div class="date-range">
+                    <input type="text" value="16.05.2018" class="date-start">
+                    <div class="date-spacer"></div>
+                    <input type="text" value="16.05.2018" class="date-end">
+                    <a href="#">
+                        <i class="icon-calendar"></i>
+                    </a>
+                </div>
+                <button class="btn-small">
+                    <i class="icon-refresh"></i><!-- POMARANCZOWA IKONA REFRESH BTN -->
+                </button>
+            </div>
+            <div class="container"> <!-- TABELKA Z 2 NA 2  FTD NET DEPOSIT -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="table-col-left">
+                                <h6 class="line-header">Visit Signups</h6>
+                                <p>124</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="table-col-right">
+                                <h6 class="line-header">Net deposit</h6>
+                                <p>564</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 table-col">
+                            <div class="table-col-left">
+                                <h6 class="line-header">FTD</h6>
+                                <p>445</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 table-col">
+                            <div class="table-col-right">
+                                <h6 class="line-header">Turn over</h6>
+                                <p>432</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"><!-- WYKRES -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 table-col">
+                            <div class="chart">
+                                <h4 class="section-header">Earnings chart</h4>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-links"><!-- drugiie okno LINKS z duzej i LINKI DO FACEBOOKA  -->
+            <h3 class="page-header">Links</h3>
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12"> <!-- NA DOLE TEN SAM PRZYCISKO  -->
+                            <button class="btn">+ add new</button> 
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Home Page</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.homepage.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Currently offer</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.currently.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Blurpix</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.blurpix.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Your Site</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.yoursite.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Google</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.google.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Facebook</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.facebook.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Dashboard</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.dashboard.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Blurax</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.blurax.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Piece of Wine</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.pieceofwine.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row table-row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-9 line-title">Twitter</div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 line-link">
+                            <a href="#">http://www.twitter.com</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 line-selection">
+                            <a href="#">
+                                <i class="icon-links"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <button class="btn">+ add new</button>  <!-- U GORY TEN SAM PRZYCISKO  -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- modals -->  <!-- SPRAWDZIC JESZCZE  -->
+    <div class="overlay" id="overlay">
+        <div class="modal" id="quit-modal">
+            <h6>Do you really want to Quit?</h6>
+            <div>
+                <button class="js--close-modal btn-grey cancel">Cancel</button>
+                <button class="js--close-modal btn quit">Quit</button>
+            </div>
+        </div>
+        <div class="modal" id="login-modal">
+            <h6 class="page-header">Login</h6>
+            <form action="" method="POST">
+                <div class="field">
+                    <input type="text" name="login" placeholder="login name" class="login">
+                    <input type="password" name="password" placeholder="password" class="password">
+                    <button type="submit" class="js--close-modal btn">Enter</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal" id="chat-modal">
+            <div class="page-header">
+                <span class="js--close-modal">x</span>
+                <h6>Online chat with your personal manager</h6>
+            </div>
+            <div class="personal-manager">
+                <img src="images/photo.png">
+                <div class="name-and-status">
+                    <p>Michael E.</p>
+                    <div class="status">online</div>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="answer">
+                    <p>Hello. Can I help you?</p>
+                </div>
+                <div class="message">
+                    <p>Hello! I would like to know about Postback.</p>
+                </div>
+                <div class="answer">
+                    <p>Ok. 5 min.</p>
+                </div>
+            </div>
+            <form action="" method="POST">
+                <input type="text" name="text-to-send" placeholder="Enter the message">
+                <button type="submit" class="btn">Send</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -13,10 +13,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: $gray-dark;
+    color: $brand-color-grey;
     text-decoration: none;
     &:hover {
-        color: $gray-dark;
+        color: $brand-color-grey;
         text-decoration: underline;
     }
 }

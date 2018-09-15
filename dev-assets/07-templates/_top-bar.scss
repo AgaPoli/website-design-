@@ -1,4 +1,4 @@
-.section-topbar {
+.section--topbar {
     * {
         box-sizing: border-box;
     }
@@ -9,7 +9,7 @@
     top: 0;
     [class*='icon-'] {
         display: inline-block;
-        margin-top: $grid-base * 0.1875;
+        margin-top: 3px;
     }
     @media (max-width:767px) {
         flex-direction: column;
@@ -18,12 +18,12 @@
 }
 
 .topbar-left {
-    width: $grid-base * 19;
+    width: 190px;
     height: $grid-base * 6;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //z-index: 1;
+    z-index: 1;
     background-color: $paragraph-color;
     .logo {
         padding-left: $grid-base * 2;
@@ -46,7 +46,7 @@
 }
 
 .topbar-right {
-    width: calc(100% - $grid-base * 19); // -190px
+    width: calc(100% - 190px); // -190px
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -89,7 +89,7 @@
             border-bottom: {
                 color: $brand-color-disabled;
                 style: solid;
-                width: $grid-base * 0.0625;
+                width: 1px;
             }
         }
     }
@@ -127,7 +127,7 @@
             color: $brand-color-grey;
             padding-left: $grid-base * 1.125;
         }
-        a {
+        //a {
             //@extend .link-l;
         }
         @media (max-width:767px) {
@@ -141,7 +141,7 @@
         flex-direction: column;
         width: 100%; // margin-top: 61px;
     }
-}
+
 
 .visible-lg {
     @media (max-width: 767px) {

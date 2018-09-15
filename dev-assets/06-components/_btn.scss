@@ -1,68 +1,45 @@
-.c-btn {
-    border: none;
-    border-radius: $border-radius;
-    display: inline-block;
-    font-size: $font-size-5;
-    font-weight: 700;
-    line-height: $line-height-base;
-    padding: .75rem 0;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all .25s ease-in-out;
-    width: $grid-base * 22;
+.btn {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 3px;
+  border-width: 0px;
+  background-color: $brand-color;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 40px;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  &:hover {
+    background-color: $brand-color-hover;
+    color: #fff;
+  }
+}
 
-    &:hover {
-        text-decoration: none;
-    }
+.btn-small {
+  @extend .btn;
+  font-size: 16px;
+  padding: 0;
+  width: 41px;
+  text-align: center;
+}
 
-    &--primary {//glowny przycisk
-        background-color: $brand-color;
-        color: $gray-text;
+.btn-grey {
+  @extend .btn;
+  background-color: $brand-color-grey;
+  &:hover {
+    background-color: $brand-color-grey-hover;
+    color: #fff;
+  }
+}
 
-        &:hover {
-            background-color: darken($brand-color-hover, 15%);
-            color: $white;
-        }
-    }
-
-    &--accent {
-        background-color: $brand-color-grey;
-        color: $white;
-
-        &:hover {
-            background-color: darken($brand-color-grey-hover, 15%);
-            color: $white;
-        }
-    }
-
-    &--dark-blue {
-        background-color: pink;
-        color: $white;
-
-        &:hover {
-            background-color: $brand-color;
-            color: $white;
-        }
-    }
-
-    &--light {
-        background-color: $white;
-        color: $gray-text;
-
-        &:hover {
-            background-color: darken($white, 15%);
-            color: $gray-text;
-        }
-    }
-
-    &--outline {
-        background-color: transparent;
-        border: 2px solid $white;
-        color: $white;
-        
-        &:hover {
-            color: darken($white, 15%);
-            border: 2px solid darken($white, 15%);
-        }
-    }
+.btn-disabled {
+  @extend .btn;
+  background-color: $brand-color-disabled;
+  &:hover {
+    background-color: $brand-color-disabled;
+    color: #fff;
+  }
 }
